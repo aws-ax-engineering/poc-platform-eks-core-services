@@ -217,21 +217,21 @@ module "eks_addons" {
         controller:
           serviceAccount:
             annotations:
-              eks.amazonaws.com/role-arn: arn:aws:iam::599654392735:role/mapi-i01-aws-us-east-2-argocd-server-sa
+              eks.amazonaws.com/role-arn: arn:aws:iam::<prod-aws-account-id>:role/mapi-i01-aws-us-east-2-argocd-server-sa
         applicationSet:
           serviceAccount:
             annotations:
-              eks.amazonaws.com/role-arn: arn:aws:iam::599654392735:role/mapi-i01-aws-us-east-2-argocd-server-sa
+              eks.amazonaws.com/role-arn: arn:aws:iam::<prod-aws-account-id>:role/mapi-i01-aws-us-east-2-argocd-server-sa
         notifications:
           serviceAccount:
             annotations:
-              eks.amazonaws.com/role-arn: arn:aws:iam::599654392735:role/mapi-i01-aws-us-east-2-argocd-server-sa
+              eks.amazonaws.com/role-arn: arn:aws:iam::<prod-aws-account-id>:role/mapi-i01-aws-us-east-2-argocd-server-sa
         server:
           service:
             type: LoadBalancer
           serviceAccount:
             annotations:
-              eks.amazonaws.com/role-arn: arn:aws:iam::599654392735:role/mapi-i01-aws-us-east-2-argocd-server-sa
+              eks.amazonaws.com/role-arn: arn:aws:iam::<prod-aws-account-id>:role/mapi-i01-aws-us-east-2-argocd-server-sa
           extraArgs:
             - --insecure
       EOT

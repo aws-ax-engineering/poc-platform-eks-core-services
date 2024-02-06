@@ -72,7 +72,7 @@ resource "aws_iam_policy" "argocd_sa_policy" {
         ]
         Effect = "Allow"
         Resource = [
-          "arn:aws:iam::599654392735:role/POCTerraformRole"
+          "arn:aws:iam::<prod-aws-account-id>:role/POCTerraformRole"
         ]
       },
     ]
